@@ -1,6 +1,6 @@
 # Ntenum
 
-VB6 working copy of `Ntenum` from Dave Robinson's OneDrive Historical Dev `VB/Old` folder. Project title: NTEnum. `VersionCompanyName`: Novo Nordisk A/S.
+Novo Nordisk VB6 domain enumerator (`NTEnum`) with form `FrmEnum` (caption "Enumeration"). Buttons enum NetAPI32 domain groups and users for a typed domain, listing results; selecting a user opens `FrmUserInfo` populated via class `User_Info_3` and `NetUserGetInfo` level 3 (home dir, profile, logon script, privilege, password flags, global groups, workstations allowed). Module `NTAPI` also wraps `NetGetDCName`, group add/del user, and share helpers.
 
 **Source last updated:** 2026-08-27 · **Language:** VB6 · **Target:** VB6 Win32 · **Output:** WinForms exe
 
@@ -10,7 +10,7 @@ _Note: original OneDrive LastWriteTime values were wiped to 2026-08-27 by a zip 
 
 | Project | Language | Type | Purpose |
 |---------|----------|------|---------|
-| `NTEnum` (`Ntenum.vbp`) | VB6 | WinForms exe | NTEnum |
+| `NTEnum` (`Ntenum.vbp`) | VB6 | WinForms exe | Enumerate NT domain users/groups and show User_Info_3 detail |
 
 ## How to open
 
@@ -20,6 +20,7 @@ Open the `.vbp` in Visual Basic 6.0 IDE:
 ## Requirements
 
 - Visual Basic 6.0 IDE
+- Windows NetAPI32 (`netapi32.dll`) rights to enumerate the target domain
 
 ## Attribution and provenance
 
