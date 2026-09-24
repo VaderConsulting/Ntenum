@@ -24,7 +24,7 @@ Open the `.vbp` in Visual Basic 6.0 IDE:
 
 ## Attribution and provenance
 
-Working copy from Dave Robinson's OneDrive Historical Dev folder `VB/Old/Ntenum`.
+Working copy from my Historical Dev folder `VB/Old/Ntenum`.
 Company names in project files: Novo Nordisk A/S.
 Third-party attribution: Novo Nordisk A/S. See `THIRD_PARTY_NOTICES.md`.
 
